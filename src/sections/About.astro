@@ -1,0 +1,64 @@
+---
+import ItemAbout from "@/components/ItemAbout.astro";
+import ArrowIcon from "@/icons/ArrowIcon.astro";
+import { about } from "@info";
+const arrayInfoLeft = about.filter((item) => item.position === "left");
+const arrayInfoRight = about.filter((item) => item.position === "right");
+---
+
+<section class="max-w-7xl mx-auto px-5 py-28">
+  <div class="flex flex-col items-center justify-center">
+    <p class="text-text-secondary text-lg font-medium">Nosotros</p>
+    <h1 class="text-3xl md:text-4xl tracking-wide font-light text-text-primary">
+      ¿Quienes somos?
+    </h1>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 mt-20 gap-5">
+    <div class="flex flex-col gap-14">
+      {
+        arrayInfoLeft.map((item, index) => (
+          <ItemAbout
+            key={index}
+            title={item.title}
+            description={item.description}
+            position={item.position}
+          />
+        ))
+      }
+    </div>
+    <div>
+      <img
+        src="/assets/nosotros-index.webp"
+        alt="Acta de constitución del Centro de Arbitraje"
+        class="w-full"
+      />
+    </div>
+    <div class="flex flex-col gap-14">
+      {
+        arrayInfoRight.map((item, index) => (
+          <ItemAbout
+            key={index}
+            title={item.title}
+            description={item.description}
+            position={item.position}
+          />
+        ))
+      }
+    </div>
+  </div>
+  <div class="flex justify-end mt-10">
+    <a
+      href="/nosotros"
+      class="relative flex items-center justify-center gap-2 uppercase text-lg tracking-wider font-bold text-primary hover:scale-105 transition-all duration-500 group"
+    >
+      Conoce a nuestro equipo
+      <span
+        class="bg-primary rounded-full p-1 w-12 h-12 flex items-center justify-center group-hover:bg-tertiary transition-colors duration-500"
+      >
+        <ArrowIcon
+          class="w-7 h-7 rotate-180 text-white"
+        />
+      </span>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+{
+    "about": [{
+        "title": "Confianza",
+        "position": "left",
+        "description": "A lo largo de los años, hemos generando confianza en nuestros usuarios, lo cual nos ha permitido mantenernos vigentes, crecer sostenidamente y constituirnos en la institución líder en la administración de arbitrajes de la Macro Región Sur del Perú."
+    },{
+        "title": "Eficiencia",
+        "position": "left",
+        "description": "Impulsamos el arbitraje como un medio eficiente e idóneo para la solución de controversias de carácter patrimonial y de libre disponibilidad, conforme a derecho."
+    },{
+        "title": "Experiencia",
+        "position": "left",
+        "description": "Nuestra experiencia nos permite administrar los casos a nuestro cargo de manera exitosa."
+    },{
+        "title": "Transparencia",
+        "position": "right",
+        "description": "Nuestro Centro ofrece a sus usuarios la garantía de tramitar su arbitraje de manera célere, transparente, independiente e imparcial."
+    },{
+        "title": "Profesionalismo",
+        "position": "right",
+        "description": "Nuestros servicios están a cargo de especialistas en materia arbitral y dedicados exclusivamente a sus funciones."
+    },{
+        "title": "Tecnología",
+        "position": "right",
+        "description": "El Centro cuenta con la infraestructura tecnológica y física para conducir todo el proceso y sus incidencias sin demoras y garantizando la confidencialidad."
+    }]
+}

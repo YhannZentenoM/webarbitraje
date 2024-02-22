@@ -1,0 +1,21 @@
+---
+import ArrowIcon from '@/icons/ArrowIcon.astro'
+---
+<section class="h-screen relative bg-no-repeat bg-cover shadow-xl" style="background-image: url(/assets/background.webp);">
+    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-80"></div>
+    <div class="max-w-7xl mx-auto h-full px-5 flex flex-col">
+        <div class="flex flex-col items-start justify-center flex-1">
+            <h1 class="text-5xl leading-tight font-bold text-white text-balance animate-fade-in-down animate-duration-1000 max-w-2xl">Liderando la solución privada de sus conflictos</h1>
+        </div>
+        <div class="flex items-center justify-between pb-24 px-20">
+            <div class="flex items-center justify-center text-lg font-light text-white">
+                <a href="https://www.arbitrajeccia.com.pe/sistema/auth/loginescritos" target="_blank" class="relative text-center max-w-40 hover:scale-105 transition-all duration-500 p-5 after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:bg-secondary hover:after:bg-tertiary animate-fade-in-up">Ingreso de <span class="uppercase font-bold">Escritos</span></a>
+                <a href="https://app-petition.arbitrajeccia.com.pe/" target="_blank" class="relative text-center max-w-40 hover:scale-105 transition-all duration-500 p-5 after:absolute after:left-0 after:-bottom-1 after:w-full after:h-1 after:bg-secondary after:transition-all after:duration-500 hover:after:bg-tertiary animate-fade-in-up animate-delay-200">Ingreso de <span class="uppercase font-bold">Solicitudes</span></a>
+            </div>
+            <a href="/nosotros" class="relative flex items-center justify-center gap-2 uppercase text-lg tracking-wider font-bold text-white hover:scale-105 transition-all duration-500 group animate-fade-in-up animate-delay-250">
+                <span class="bg-primary rounded-full p-1 w-12 h-12 flex items-center justify-center group-hover:bg-tertiary transition-colors duration-500"><ArrowIcon class="w-7 h-7 rotate-180 group-hover:animate-pulse group-hover:text-white" /></span>
+                Descubre más
+            </a>
+        </div>
+    </div>
+</section>
